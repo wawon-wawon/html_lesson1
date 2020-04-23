@@ -1,0 +1,179 @@
+body{
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+header{
+  text-align: left;
+}
+header img{
+  width: 200px;
+  height:auto;
+}
+img.logo{
+  width: 100px;
+  height: auto;
+  text-align: left;
+}
+.top{
+  padding: 225px 0;
+  background-image: url("IMG-0819.JPG");
+  sbackground-size: cover;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.top:before{
+  content: '';
+  background: inherit;
+  /*-webkit-filter: blur(8px);
+  -moz-filter: blur(8px);
+  -o-filter: blur(8px);
+  -ms-filter: blur(8px);*/
+  filter: blur(8px);
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  z-index: -1;/
+}
+
+h1{
+  letter-spacing: 4px;
+  color: #fff;
+  font-size: 2.5em;
+}
+
+.articles{
+  background-color: #E2E2E2;
+  padding: 50px 0 50px;
+}
+
+.inner{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.article{
+  margin: 20px 0 0;
+  padding: 6px;
+  background-color: #fff;
+}
+
+.article h2{
+  text-align: left;
+  color: #444;
+  font-size: 24px;
+  line-height: 1.6em;
+  padding: 0 0 2px 12px;
+  border-left: 4px solid #444;
+  border-bottom: 1px solid #888;
+}
+
+.btn-square-emboss {
+  display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #cc5e6b;/*ボタン色*/
+  color: #ae2735;/*ボタン色より暗く*/
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 3px #627295;
+  border-radius: 3px;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.btn-square-emboss:active  {
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: none;
+}
+
+.page {
+  position: relative;
+  padding: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.03);
+  -moz-box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.15), inset 0 0 50px rgba(0, 0, 0, 0.03);
+}
+
+.page:before, .page:after {
+  position: absolute;
+  width: 40%;
+  height: 10px;
+  content: ' ';
+  left: 12px;
+  bottom: 12px;
+  background: transparent;
+  -webkit-transform: skew(-5deg) rotate(-5deg);
+  -moz-transform: skew(-5deg) rotate(-5deg);
+  -ms-transform: skew(-5deg) rotate(-5deg);
+  -o-transform: skew(-5deg) rotate(-5deg);
+  transform: skew(-5deg) rotate(-5deg);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  z-index: -1;
+}
+
+.page:after {
+  left: auto;
+  right: 12px;
+  -webkit-transform: skew(5deg) rotate(5deg);
+  -moz-transform: skew(5deg) rotate(5deg);
+  -ms-transform: skew(5deg) rotate(5deg);
+  -o-transform: skew(5deg) rotate(5deg);
+  transform: skew(5deg) rotate(5deg);
+}
+
+.article p{
+  text-align: left;
+}
+
+.article .link{
+  text-align: right;
+}
+
+.concept{
+  padding: 50px 0 50px;
+}
+
+.concept p{
+  line-height: 35px;
+}
+
+.mb5{
+  margin-bottom: 5em;
+}
+
+.profile{
+  padding: 50px 0 30px;
+}
+
+.profile img{
+  border-radius: 50%;
+  width: 100px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.作家の開く個展 {
+  overflow: hidden;	/*拡大時にはみ出た部分を隠す*/
+  width: 320px;	/*画像の幅*/
+  height: 180px;	/*画像の高さ*/
+}
+.作家の開く個展 img {
+  display: block;
+  transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
+.作家の開く個展 img:hover {
+  transform: scale(1.1);	/*画像の拡大率*/
+  transition-duration: 0.3s;	/*変化に掛かる時間*/
+}
